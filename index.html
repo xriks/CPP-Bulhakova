@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Букварня — сучасна кросплатформна книгарня</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1>Букварня</h1>
+        <p>Ваш затишний простір для вибору та читання найкращих книг</p>
+    </div>
+</header>
+
+<main class="container main">
+
+    <section class="card">
+        <h2>Про застосунок</h2>
+        <p>
+            <strong>Букварня</strong> — це сучасний вебзастосунок для онлайн-книгарні, який дозволяє
+            переглядати каталог книг, зручно шукати потрібні видання, додавати їх до кошика або зберігати в список бажань.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Основні функції</h2>
+        <ul class="features-list">
+            <li>Перегляд доступних книг у каталозі</li>
+            <li>Пошук книг за назвою</li>
+            <li>Перегляд детальної інформації про книгу</li>
+            <li>Додавання книг до кошика</li>
+            <li>Збереження у список бажань</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Пошук книги</h2>
+        <div class="search-box">
+            <input
+                    type="text"
+                    id="searchInput"
+                    class="search-input"
+                    placeholder="Введіть назву книги..."
+            >
+            <button id="searchButton" class="button">Знайти книгу</button>
+        </div>
+        <p id="message" class="message"></p>
+    </section>
+
+    <section class="card">
+        <h2>Каталог книг</h2>
+
+        <div id="booksList" class="books-grid">
+
+            <article class="book-item">
+                <div class="book-info">
+                    <h3>Кобзар</h3>
+                    <p class="author"><strong>Автор:</strong> Тарас Шевченко</p>
+                    <p class="genre"><strong>Жанр:</strong> Поезія</p>
+                    <p class="price">350 грн</p>
+                </div>
+                <div class="book-actions">
+                    <button class="buy-button">До кошика</button>
+                    <button class="wishlist-button" title="Додати в обране">♥ В обране</button>
+                </div>
+            </article>
+
+            <article class="book-item">
+                <div class="book-info">
+                    <h3>1984</h3>
+                    <p class="author"><strong>Автор:</strong> Джордж Орвелл</p>
+                    <p class="genre"><strong>Жанр:</strong> Антиутопія</p>
+                    <p class="price">420 грн</p>
+                </div>
+                <div class="book-actions">
+                    <button class="buy-button">До кошика</button>
+                    <button class="wishlist-button" title="Додати в обране">♥ В обране</button>
+                </div>
+            </article>
+
+            <article class="book-item">
+                <div class="book-info">
+                    <h3>Маленький принц</h3>
+                    <p class="author"><strong>Автор:</strong> Антуан де Сент-Екзюпері</p>
+                    <p class="genre"><strong>Жанр:</strong> Казка</p>
+                    <p class="price">280 грн</p>
+                </div>
+                <div class="book-actions">
+                    <button class="buy-button">До кошика</button>
+                    <button class="wishlist-button" title="Додати в обране">♥ В обране</button>
+                </div>
+            </article>
+
+            <article class="book-item">
+                <div class="book-info">
+                    <h3>Гаррі Поттер і філософський камінь</h3>
+                    <p class="author"><strong>Автор:</strong> Дж. К. Ролінґ</p>
+                    <p class="genre"><strong>Жанр:</strong> Фентезі</p>
+                    <p class="price">450 грн</p>
+                </div>
+                <div class="book-actions">
+                    <button class="buy-button">До кошика</button>
+                    <button class="wishlist-button" title="Додати в обране">♥ В обране</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Список бажань</h2>
+        <ul id="wishlistList" class="cart-list"></ul>
+        <p id="wishlistMessage" class="message empty-message">Список бажань порожній.</p>
+    </section>
+
+    <section class="card">
+        <h2>Кошик</h2>
+        <ul id="cartList" class="cart-list"></ul>
+        <p id="cartMessage" class="message empty-message">Кошик порожній.</p>
+    </section>
+
+    <section class="card">
+        <h2>Обраний стек технологій</h2>
+        <p>
+            Для створення вебзастосунку використано вебтехнології, які забезпечують його швидку та стабільну роботу на будь-яких пристроях.
+        </p>
+
+        <div class="table-responsive">
+            <table class="tech-table">
+                <thead>
+                <tr>
+                    <th>Компонент</th>
+                    <th>Технологія</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Структура сторінки</td>
+                    <td>HTML5</td>
+                </tr>
+                <tr>
+                    <td>Оформлення</td>
+                    <td>CSS3 (Montserrat Font & CSS Grid)</td>
+                </tr>
+                <tr>
+                    <td>Логіка та інтерактивність</td>
+                    <td>JavaScript (ES6+)</td>
+                </tr>
+                <tr>
+                    <td>Платформа запуску</td>
+                    <td>Кросплатформний веббраузер</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>Лабораторна робота №1. Основи кросплатформності | Книгарня «Букварня»</p>
+</footer>
+
+<script src="bookstore-app.js"></script>
+
+</body>
+</html>
