@@ -1,0 +1,18 @@
+{
+  "name": "bukvarnia-graphql",
+  "version": "1.0.0",
+  "description": "GraphQL API книгарні «Букварня» на Apollo Server з JWT-автентифікацією",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "bcryptjs": "^2.4.3",
+    "graphql": "^16.9.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

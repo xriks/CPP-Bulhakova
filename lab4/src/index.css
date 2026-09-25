@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat Variable", system-ui, sans-serif;
+  --color-cream: #e9e6d6;
+  --color-bone: #f3f1e6;
+  --color-khaki: #cdc8ab;
+  --color-olive: #3c3a1d;
+  --color-wine: #5b1b26;
+  --color-gold: #e3d6a1;
+}
